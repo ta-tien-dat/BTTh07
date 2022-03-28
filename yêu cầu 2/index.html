@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+</head>
+<body>
+    <!-- Chia để trị: -->
+    <!-- 1, Bỏ qua vấn đề làm đẹp (CSS) > Tập trung Javascript -->
+    <!-- 2, Chia nhỏ vấn đề cần xử lý: 10 vấn đề > 2 vấn đề đầu tiên trước -->
+
+    <form action="">
+        <div class="row">
+            <div class="col">
+                User ID:
+            </div>
+            <div class="col">
+                <input type="text" name="txtUserID" id="txtUserID">
+                <span id="statusOfUserID"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Password:
+            </div>
+            <div class="col">
+                <input type="password" name="txtPassword" id="txtPassword">
+                <span id="statusOfPassword"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Name:
+            </div>
+            <div class="col">
+                <input type="text" name="txtName" id="txtName">
+                <span id="name_row"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Address:
+            </div>
+            <div class="col">
+                <input type="text" name="txtAdd" id="txtAdd">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Country:
+            </div>
+            <div class="col">
+                <select name="country" id="selectCountry">
+                    <option selected="" value="Default" >(Please select a country)</option>
+                    <option value="VI">VietNamese</option>
+                    <option value="JP">Japan</option>
+                    <option value="US">United States</option>
+                    <option value="TL">Thailand</option>
+                    <option value="AU">Australia</option>
+                </select>
+                <span id="statusOfCountry"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Zip Code:
+            </div>
+            <div class="col">
+                <input type="text" name="txtCode" id="txtCode">
+                <span id="statusOfCode"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Email:
+            </div>
+            <div class="col">
+                <input type="text" name="txtmMail" id="txtMail">
+                <span id="statusOfMail"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Sex:
+            </div>
+            <div class="col">
+                <input type="radio" name="sex" value="1" class="1"/><span>Male</span>
+                <input type="radio" name="sex" value="1" class="1"/><span>Female</span>
+                <span id="statusOfSex"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Language:
+            </div>
+            <div class="col">
+                <input type="checkbox" name="en" value="2" class="2" /><span>English</span>
+                <input type="checkbox" name="en" value="2" class="2"/><span>Non English</span>
+                <span id="statusOfLan"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                About:
+            </div>
+            <div class="col">
+                <textarea name="desc" id="desc"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+               
+            </div>
+            <div class="col">
+                <input type="submit" name="btnRegister" id="btnRegister" value="Register">
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
